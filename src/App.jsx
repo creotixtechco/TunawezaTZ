@@ -1,35 +1,36 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Navigation from './components/Navigation';
-import Slider from './components/Slider';
-import Home from './pages/Home';
+import Homepage from './pages/Homepage';
 import AboutUs from './pages/AboutUs';
-import Contacts from './pages/Contacts';
-import DonationSupport from './pages/DonationSupport';
+import Programs from './pages/Programs';
+import Impact from './pages/Impact';
+import GetInvolved from './pages/GetInvolved';
 import News from './pages/News';
-import Partners from './pages/Partners';
+import Donate from './pages/Donate';
 import Shop from './pages/Shop';
-import Volunteerism from './pages/Volunteerism';
+import Contact from './pages/Contact';
+import './styles/global.css';
 
 const App = () => {
     return (
         <Router>
-            <div className="app">
+            <div className="min-h-screen flex flex-col">
                 <Header />
-                <Navigation />
-                <Slider />
-                <Switch>
-                    <Route path="/" exact component={Home} />
-                    <Route path="/about-us" component={AboutUs} />
-                    <Route path="/contacts" component={Contacts} />
-                    <Route path="/donation-and-support" component={DonationSupport} />
-                    <Route path="/news" component={News} />
-                    <Route path="/partners" component={Partners} />
-                    <Route path="/shop" component={Shop} />
-                    <Route path="/volunteerism" component={Volunteerism} />
-                </Switch>
+                <main className="flex-grow">
+                    <Routes>
+                        <Route path="/" element={<Homepage />} />
+                        <Route path="/about" element={<AboutUs />} />
+                        <Route path="/programs" element={<Programs />} />
+                        <Route path="/impact" element={<Impact />} />
+                        <Route path="/get-involved" element={<GetInvolved />} />
+                        <Route path="/news" element={<News />} />
+                        <Route path="/donate" element={<Donate />} />
+                        <Route path="/shop" element={<Shop />} />
+                        <Route path="/contact" element={<Contact />} />
+                    </Routes>
+                </main>
                 <Footer />
             </div>
         </Router>
