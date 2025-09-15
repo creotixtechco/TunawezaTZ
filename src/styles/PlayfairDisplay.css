@@ -3,9 +3,9 @@
     font-style: normal;
     font-weight: 400;
     src: local('Playfair Display'), local('PlayfairDisplay'),
-         url('../fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
-         url('../fonts/PlayfairDisplay-Regular.woff') format('woff'),
-         url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+         url('/assets/fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+         url('/assets/fonts/PlayfairDisplay-Regular.woff') format('woff'),
+         url('/assets/fonts/PlayfairDisplay-Regular.ttf') format('truetype');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
     font-style: normal;
     font-weight: 700;
     src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
-         url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
-         url('../fonts/PlayfairDisplay-Bold.woff') format('woff'),
-         url('../fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+         url('/assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+         url('/assets/fonts/PlayfairDisplay-Bold.woff') format('woff'),
+         url('/assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
 }
