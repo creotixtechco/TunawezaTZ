@@ -1,0 +1,77 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header styles */
+.art-header {
+    background-color: #4CAF50; /* Green */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigation styles */
+.art-nav {
+    background-color: #333;
+}
+
+.art-nav ul {
+    list-style-type: none;
+}
+
+.art-nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.art-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+}
+
+.art-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Content styles */
+.art-content {
+    padding: 20px;
+}
+
+.art-content-layout {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.art-layout-cell {
+    flex: 1;
+    padding: 10px;
+}
+
+/* Footer styles */
+.art-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .art-nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .art-content-layout {
+        flex-direction: column;
+    }
+}
